@@ -59,8 +59,8 @@ module Chromedriver
       case cfg['host_os']
       when /linux/ then
         cfg['host_cpu'] =~ /x86_64|amd64/ ? "linux64" : "linux32"
-      when /darwin/ then "mac"
-      else "win"
+      when /darwin/ then "mac32"
+      else "win32"
       end
     end
   end
